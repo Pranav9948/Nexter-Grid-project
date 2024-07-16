@@ -240,6 +240,12 @@ body {
     text-align: center;
   }
 }
+@media only screen and (max-width: 20em) {
+  .header .header-section h1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
 @media only screen and (max-width: 23.8em) {
   .header .header-section h1 {
     font-size: 3rem;
@@ -252,6 +258,11 @@ body {
 @media only screen and (max-width: 54.25em) {
   .header .header-section__btn {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .header .header-section__btn {
+    margin-bottom: 2rem;
   }
 }
 .header .header-section__seen-on__text {

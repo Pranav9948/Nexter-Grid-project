@@ -64,6 +64,13 @@
         text-align: center;
       }
 
+      @media only screen and (max-width: $bp-mini-phones) {
+  
+       margin-top: 3rem;
+       margin-bottom: 3rem;
+}
+
+
             @media only screen and (max-width: $bp-small-mobile) {
   
       font-size: 3rem;
@@ -79,6 +86,11 @@
       @media only screen and (max-width: $bp-large-tablet) {
         text-align: center;
       }
+
+         @media only screen and (max-width: $bp-mini-phones) {
+  
+             margin-bottom: 2rem;
+         }
     }
 
     &__seen-on__text {
