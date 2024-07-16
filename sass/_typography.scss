@@ -1,0 +1,91 @@
+.heading {
+  font-family: $font-display;
+}
+
+
+.heading-1 {
+  @extend .heading;
+  font-size: 4.5rem;
+  color: $color-grey-light-1;
+  font-family: $font-display;
+  
+};
+
+
+.heading-2 {
+  @extend .heading;
+
+  font-family: $font-display;
+  font-size: 4rem;
+  font-style: italic;
+
+  &__dark {
+    color: $color-grey-dark-1;
+  }
+}
+
+.heading-3 {
+  @extend .heading;
+  font-size: 1.6rem;
+ font-family: $font-display;
+
+}
+
+.heading-4 {
+  @extend .heading;
+
+  &__dark {
+    color: $color-grey-dark-1;
+  }
+
+  &__white {
+     color: $color-grey-light-1;
+  }
+
+  font-size: 1.9rem;
+}
+
+.heading-5 {
+  @extend .heading;
+
+  font-family: $font-display;
+  font-size: 1.6rem;
+  color: $color-primary;
+}
+
+.heading-6 {
+  @extend .heading;
+}
+
+
+
+.--mb-1{
+
+    margin-bottom: 1rem;
+}
+
+
+
+.--mb-2{
+
+    margin-bottom: 2rem;
+}
+
+
+.--mb-3{
+
+    margin-bottom: 3rem;
+}
+
+
+.--mb-4{
+
+    margin-bottom: 4rem;
+}
+
+
+
+.--mb-5{
+
+    margin-bottom: 5rem;
+}

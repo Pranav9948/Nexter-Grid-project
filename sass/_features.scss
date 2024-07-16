@@ -1,0 +1,50 @@
+.features {
+  background-color: $color-primary-white;
+  grid-column: center-start / center-end;
+  padding: 15rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+  align-items: start;
+
+  &__feature{
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: start;
+    
+    column-gap: 2.5rem;
+
+    &__icon {
+
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    
+    
+    i{
+
+    
+        font-size: 4.5rem;
+        color: $color-grey-dark-2;
+         
+        
+    }
+
+}
+
+    
+
+    &__text{
+
+        font-family: $font-primary;
+        font-size: 1.7rem;
+        color: $color-grey-dark-2;
+        margin-top: 1.5rem;
+        font-weight: 400;
+    }
+
+
+  }
+
+
+}

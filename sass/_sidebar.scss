@@ -1,0 +1,67 @@
+
+.sidebar {
+  background-color: $color-primary;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1/-1;
+
+   @media only screen and (max-width: $bp-large) {
+
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    align-content: start;
+    
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+.side-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  @media only screen and (max-width: $bp-large) {
+
+    margin-top: 1rem;
+    justify-content: start;
+   margin-left: 3rem;
+
+  }
+
+  &__btn {
+    height: 2px;
+    width: 4.5rem;
+    position: relative;
+    border: none;
+    
+
+    &::before {
+      content: "";
+      height: 2px;
+    width: 4.5rem;
+      display: block;
+      position: absolute;
+      background-color: white;
+      top: 1.5rem;
+    }
+
+     &::after {
+      content: "";
+      height: 2px;
+    width: 4.5rem;
+      display: block;
+      position: absolute;
+      background-color: white;
+      top: 3rem;
+    }
+  }
+}

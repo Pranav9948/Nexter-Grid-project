@@ -1,0 +1,158 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-primary-white: #fff;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+
+// responsive units
+
+
+$bp-largest:75em;
+$bp-large:62.5em;
+$bp-large-tablet:54.25em;
+$bp-large-mobile:36.25em;
+$bp-small-mobile:23.8em;
+$bp-mini-phones:20em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+
+  @media only screen and (max-width: $bp-largest) {
+  
+     font-size: 56.25%;
+}
+
+@media only screen and (max-width: $bp-large) {
+  
+     font-size: 50%;
+}
+
+@media only screen and (max-width: $bp-small-mobile) {
+  
+     font-size: 45%;
+}
+
+@media only screen and (max-width: $bp-mini-phones) {
+  
+     font-size: 40%;
+}
+
+
+
+
+
+
+
+
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $color-grey-dark-2;
+}
+
+.container {
+  display: grid;
+
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start]
+    repeat(
+      1,
+      [col-1-start] minmax(min-content, 14rem) [col-1-end col-2-start]
+        minmax(min-content, 14rem) [col-2-end col-3-start]
+        minmax(min-content, 14rem) [col-3-end col-4-start]
+        minmax(min-content, 14rem) [col-4-end col-5-start]
+        minmax(min-content, 14rem) [col-5-end col-6-start]
+        minmax(min-content, 14rem) [col-6-end col-7-start]
+        minmax(min-content, 14rem) [col-7-end col-8-start]
+        minmax(min-content, 14rem) [col-8-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+  
+     grid-template-rows: 6rem calc(100vh - 6rem) min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start]
+    repeat(
+      1,
+      [col-1-start] minmax(min-content, 14rem) [col-1-end col-2-start]
+        minmax(min-content, 14rem) [col-2-end col-3-start]
+        minmax(min-content, 14rem) [col-3-end col-4-start]
+        minmax(min-content, 14rem) [col-4-end col-5-start]
+        minmax(min-content, 14rem) [col-5-end col-6-start]
+        minmax(min-content, 14rem) [col-6-end col-7-start]
+        minmax(min-content, 14rem) [col-7-end col-8-start]
+        minmax(min-content, 14rem) [col-8-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+@media only screen and (max-width: $bp-large-tablet) {
+  
+      grid-template-rows: 6rem  80vh min-content min-content min-content min-content  repeat(3, min-content);
+
+     
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.primary-btn {
+  padding: 1.8rem 3rem;
+  font-size: 1.8rem;
+  color: $color-primary-white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-primary-dark;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  transition: all 0.4s ease-out;
+
+  &:hover {
+    background-color: $color-grey-dark-1;
+  }
+}
+
+
+
+

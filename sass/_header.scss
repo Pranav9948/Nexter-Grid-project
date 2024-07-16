@@ -1,0 +1,119 @@
+.header {
+  background-color: $color-secondary;
+  grid-column: full-start / col-6-end;
+
+  @media only screen and (max-width: $bp-large-tablet) {
+    grid-column: full-start / full-end;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url("../img/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  padding: 4rem 8rem 8rem;
+
+  .header-section {
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    height: 100%;
+    row-gap: 1.5rem;
+ 
+    @media only screen and (max-width: $bp-large-mobile) {
+      row-gap: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small-mobile) {
+      row-gap: 2.5rem;
+    }
+
+    .logo {
+      justify-self: center;
+
+      img {
+        height: 3rem;
+      }
+    }
+
+    &__heading__3 {
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: 500;
+
+      align-self: center;
+
+      @media only screen and (max-width: $bp-large-tablet) {
+        text-align: center;
+      }
+    }
+
+    h1 {
+      align-self: center;
+     
+      @media only screen and (max-width: $bp-large-mobile) {
+        font-size: 3.5rem;
+
+        text-align: center;
+      }
+
+            @media only screen and (max-width: $bp-small-mobile) {
+  
+      font-size: 3rem;
+    
+      text-align: center;
+     
+}
+    }
+
+    &__btn {
+      align-self: center;
+
+      @media only screen and (max-width: $bp-large-tablet) {
+        text-align: center;
+      }
+    }
+
+    &__seen-on__text {
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      align-items: center;
+      gap: 1.5rem;
+      color: #aaaaaa;
+      font-family: $font-primary;
+      font-size: 1.6rem;
+      align-self: flex-end;
+      margin-bottom: 1rem;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        color: #aaa;
+        background-color: #aaa;
+      }
+    }
+
+    &__seen-on__logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      row-gap: 4.5rem;
+      column-gap: 2.5rem;
+
+      img {
+        max-height: 2.5rem;
+        max-width: 100%;
+        filter: brightness(70%);
+      }
+    }
+  }
+}
